@@ -1,0 +1,30 @@
+{
+  "canisters": {
+    "icp_homework2_backend": {
+      "candid": "src/icp_homework2_backend/icp_homework2_backend.did",
+      "package": "icp_homework2_backend",
+      "type": "rust"
+    },
+    "icp_homework2_frontend": {
+      "dependencies": [
+        "icp_homework2_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/icp_homework2_frontend/src/index.html"
+      },
+      "source": [
+        "src/icp_homework2_frontend/assets",
+        "dist/icp_homework2_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
